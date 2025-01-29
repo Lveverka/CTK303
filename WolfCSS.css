@@ -1,0 +1,96 @@
+body {
+    background-image: url("Skelly.jpg");
+    background-repeat: none;
+    background-size: auto;
+    min-height: 100vh;
+    display: grid;
+    color: whitesmoke;
+    outline-color: white;
+    font-family: sans-serif;
+}
+
+.glitch {
+    font-size: 5.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    width: 35%;
+    
+    position: relative;
+
+    text-shadow: 
+    0.05em 0 0 rgba(255, 0, 0, .75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, .75),
+    0.025em 0.05em 0 rgba(0, 0, 255, .75);
+
+    animation: glitch 500ms infinite;
+}
+
+.glitch span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 95.9%, 0 -95%);
+    transform: translate(-0.025em , -0.0225em);
+    opacity: 0.8;
+}
+
+.glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 60%, 100% 60%, 100% -95%, 0 190%);
+    transform: translate(0.0125em , 0.025em);
+    opacity: 0.8;
+}
+
+
+@keyframes glitch {
+    0% {text-shadow:
+        0.05em 0 0 rgba(255, 0, 0, .75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, .75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, .75);
+     }
+
+     14% {text-shadow:
+        0.05em 0 0 rgba(255, 0, 0, .75),
+        -0.05em -0.025em 0 rgba(0, 255, 0, .75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, .75);
+     }
+
+     15% {text-shadow:
+        -0.05em -0.025em 0 rgba(255, 0, 0, .75),
+        0.025em 0.025em 0 rgba(0, 255, 0, .75),
+        -0.05em 0.05em 0 rgba(0, 0, 255, .75);
+     }
+
+     49% {text-shadow:
+        -0.05em -0.025em 0 rgba(255, 0, 0, .75),
+        0.025em 0.025em 0 rgba(0, 255, 0, .75),
+        -0.05em 0.05em 0 rgba(0, 0, 255, .75);
+     }
+
+     50% {text-shadow:
+        0.025em 0.05em 0 rgba(255, 0, 0, .75),
+        0.05em 0 0 rgba(0, 255, 0, .75),
+        0 -0.05em 0 rgba(0, 0, 255, .75);
+     }
+
+     99% {text-shadow:
+        0.025em 0.05em 0 rgba(255, 0, 0, .75),
+        0.05em 0 0 rgba(0, 255, 0, .75),
+        0 -0.05em 0 rgba(0, 0, 255, .75);
+     }
+
+     100% {text-shadow:
+        -0.025em 0 0 rgba(255, 0, 0, .75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, .75),
+        -0.025em -0.025em 0 rgba(0, 0, 255, .75);
+     }
+}
+
+
+  

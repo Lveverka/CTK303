@@ -1,0 +1,38 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: grey;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://source.unsplash.com/1600x900/?nature,landscape') no-repeat center center/cover;
+    padding: 100px 0;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}

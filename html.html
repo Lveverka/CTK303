@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fancy</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="css.css">
+<link 
+rel="stylesheet" 
+href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Fancy</h1>
+
+    <div id="Fdiv">
+    <a href="CAR.jpg" data-fancybox="gallery" data-caption="CAR">
+      <img src="CAR_thumb.jpg">
+    </a>
+    <a href="JEWL.jpg" data-fancybox="gallery" data-caption="JEWL">
+      <img src="JEWL_thumb.jpg">
+    </a>
+    <a href="WATCH.jpg" data-fancybox="gallery" data-caption="WATCH">
+      <img src="WATCH_thumb.jpg">
+      </a>
+
+    </div>
+
+
+    <div id="myCarousel" class="f-carousel">
+      <div class="f-carousel__slide"><img src="CAR.jpg"></div>
+      <div class="f-carousel__slide"><img src="JEWL.jpg"></div>
+      <div class="f-carousel__slide"><img src="WATCH.jpg"></div>
+  </div>
+
+  </div>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
+
+
+const container = document.getElementById("myCarousel");
+const options = { infinite: false };
+
+new Carousel(container, options);
+
+  </script>

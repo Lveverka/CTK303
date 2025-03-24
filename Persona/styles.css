@@ -1,0 +1,265 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #005B7F; /* Bloomington library blue */
+  color: black;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.header-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Intro Section Styling */
+.intro {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.intro-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #005B7F;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff5733; /* Orange button */
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e04e1b; /* Darker orange on hover */
+}
+
+/* Personas Section */
+.personas {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.personas h2 {
+  font-size: 2.5rem;
+  color: #005B7F;
+  margin-bottom: 30px;
+}
+
+.persona-card {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.persona-card:hover {
+  transform: scale(1.05);
+}
+
+.persona-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.persona-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.persona-card p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .persona-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .persona-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: black;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Journey Map Section */
+.journey-map {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Persona-Specific Styles */
+.journey-map h2 {
+  font-size: 28px;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.journey-map .journey-step {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #007BFF;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.journey-map .journey-step:hover {
+  background-color: #e0f7ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.journey-map .journey-step h3 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.journey-map .journey-step p {
+  font-size: 16px;
+  color: black;
+}
+
+/* Color Themes for Each Persona */
+.journey-map-emily .journey-step {
+  border-left-color: #FF5733; /* Orange for Emily */
+}
+
+.journey-map-james .journey-step {
+  border-left-color: #28A745; /* Green for James */
+}
+
+.journey-map-maria .journey-step {
+  border-left-color: #FFC107; /* Yellow for Maria */
+}
+
+/* Specific Styling for Each Persona's Page */
+.journey-map-emily h2 {
+  color: #FF5733; /* Match header color to step border */
+}
+
+.journey-map-james h2 {
+  color: #28A745; /* Match header color to step border */
+}
+
+.journey-map-maria h2 {
+  color: #FFC107; /* Match header color to step border */
+}
+
+
